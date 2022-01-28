@@ -1,0 +1,51 @@
+# Furniture.py - This program calculates profits and sales prices for a furniture company.
+
+itemName = "TV Stand"
+retailPrice = 325.00
+wholesalePrice = 200.00
+
+# Write your assignment statements here for profit, salePrice, and saleProfit
+profit = retailPrice - wholesalePrice
+salePrice = retailPrice - (0.25 * retailPrice)
+saleProfit = salePrice - wholesalePrice
+
+print("Furniture.py")
+print("Item Name: " + itemName)
+print("Retail Price: $" + str(retailPrice))
+print("Wholesale Price: $" + str(wholesalePrice))
+print("Profit: $" + str(profit))
+print("Sale Price: $" + str(salePrice))
+print("Sale Profit: $" + str(saleProfit))
+
+
+
+@@@@@@@@
+
+salary = float (input ())
+numDependents = int (input())
+
+# Calculate stateTax here.
+stateTax = (0.065 * salary)
+
+print("State Tax: $" + str(stateTax))
+
+# Calculate federalTax here.
+federalTax = 0.28 * salary
+
+print("Federal Tax: $" + str(federalTax))
+
+# Calculate dependantDeduction here.
+dependentDeduction = numDependents * ( 0.025 * salary)
+
+print("Dependents: $" + str(dependentDeduction))
+
+# Calculate totalWithholding here.
+
+totalWithholding = stateTax + federalTax + dependentDeduction
+
+# Calculate takeHomePay here.
+takeHomePay = salary - totalWithholding
+
+print("Salary: $" + str(salary))
+print("Take Home Pay: $" + str(takeHomePay))
+
